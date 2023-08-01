@@ -17,16 +17,13 @@ let pokemonList = [
  }
 ];
 
-document.write(pokemonList)
-
-
 for (let i = 0; i < pokemonList.length; i++) {
     if (pokemonList[i].height < 8 && pokemonList[i].height > 2 ) {
-    console.log(pokemonList[i].name + " Wow that's big!");
+    document.write(pokemonList[i].name + " Wow that's big!" + '<br>')
     }else if (pokemonList[i].height > 1){
-        console.log(pokemonList[i].name + " not big");
+        document.write(pokemonList[i].name + " not big!" + '<br>');
     }else {
-        console.log(pokemonList[i].name + " not wow");
+        document.write(pokemonList[i].name + " not wow!");
     }
     }
 
