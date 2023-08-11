@@ -41,7 +41,7 @@ document.write(pokemonRepository.getAll());
 
 // Using another way( forEach to iterate our objects instead of for loop) to display our objects on Dom
 pokemonList.forEach(function(item){
-    document.write(item);
+    document.write(item.name + item.height + item.types);
 });
     
 
