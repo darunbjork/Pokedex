@@ -35,14 +35,13 @@ let pokemonRepository = (function() {
 
 })();
 
-document.write(pokemonRepository.getAll());
-pokemonRepository.add({name: 'Pikachu' });
-document.write(pokemonRepository.getAll());
-
-// Using another way( forEach to iterate our objects instead of for loop) to display our objects on Dom
-pokemonList.forEach(function(item){
-    document.write(item.name + item.height + item.types);
+pokemonRepository.add( {name: "Blastoise", height: "5.03", types: ["water"] });
+pokemonRepository.getAll().forEach(function(pokemon){
+    document.write('﹩[pokemon.name] height:﹩[pokemon.height] types:﹩[pokemon.types[0]] <br><br></br>');   
 });
+
+ 
+
     
 
 
