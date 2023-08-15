@@ -35,10 +35,22 @@ let pokemonRepository = (function() {
 
 })();
 
-pokemonRepository.add( {name: "Blastoise", height: "5.03", types: ["water"] });
+document.write(pokemonRepository.getAll());
+pokemonRepository.add({ name: "pikachu", height: 0.3, types:["electric"] });
+
+document.write(pokemonRepository.getAll());
+
 pokemonRepository.getAll().forEach(function(pokemon){
-    document.write('﹩[pokemon.name] height:﹩[pokemon.height] types:﹩[pokemon.types[0]] <br><br></br>');   
-});
+let pokemonList = document.querySelector(".pokemon-list");
+let listItem = document.createElement =("li");
+let button = document.createElement = ("button");
+button.innerText = "placeholder";
+button.classList.add("button-class");
+listItem.appendChild(button);
+pokemonList.appendChild(listItem);
+});  
+
+
 
  
 
