@@ -59,6 +59,7 @@ let pokemonRepository = (function () {
     });
   }
 
+  //This adding show and hide modal was chaleening for me i asked my tutor to help me
 function showModal(pokemon) {
   let modalContainer = document.querySelector('#modal-container')
 
